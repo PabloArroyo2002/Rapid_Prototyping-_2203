@@ -73,12 +73,47 @@
   accumulating over time. Another approach is to design the mirrored tube so that manageable parts can be removed and cleaned with relative ease, which 
   would not be the case for removing the whole tube at once.
   
-  Producing the mirrored tube...
+  Speaking of the mirrored tubes, I believe that a viable way of producing them would be to bandsaw or table saw PVC pipes (of the correct inner diameter)
+  longitudinally and to then glue in mylar. This method seems convenient as we don't have to mess with trying to polish the inside of a metal pipe or 
+  ordering internally mirrored tubes.
   
- ## Design
+  ### Electricity generation
   
-I have been working on views from each side of the collector so that I can lay them down on cardboard and cut them out to make a scale model.
-this is currently a work in progress so for now I present 
+  Lucy's point about how difficult it would be for us to machine our own stirling engine resonated; however, I still think that using one purchased elsewhere 
+  may be a good way to convert left over heat into electricity, if we want to stay away from photovoltaics. 
+  
+  Thermocouples or anything else using the Seebeck or Peltier effects seems like it will likely be too inefficient for our needs. Besided efficiency concerns,
+  most of the Peltier devices I've run across are not rated for the temperature we expect to have around the battery.
+  
+  ### Integrating with Storage
+  
+  Storage seems to have focused a lot on how to modulate heat to the cooking surface. The integraction team will work with them on how we can accomodate
+  the absorption of the light onto the molten salt battery. Currently, the dominant idea is to use a small lens to concentrate the light onto a small 
+  black patch on the battery, so that the rest of the surface can be better insulated. 
+  
+  Insulation will likely be one of the most important roles for integration and storage, since insufficient insulation creates unnecessary losses and fire
+  risk. At 600 Fahrenheit wood will spontaneously combust, and if any of the KNO3 or NaNO3 (the molten salts) were to leak onto the wood it create quite 
+  the impressive blaze. More concerningly, if the nitrates were to leak in sufficient amounts, the extra oxygen from the nitrate groups could likely get 
+  any surrounding wood to burn hot enough to boil the nitrates, at which point there could be a runaway reaction. For this reason, controlling
+  the temperature of the battery and having a fail proof design is just as (if not more) important than controlling the temperature of the cooking surface.
+  
+  In terms of insulating the battery, an aerogel (silica) mat will be very cost effective as it can be cut without special tools and can withstand
+  up to 1000 degrees celsius, while providing just about the best insulation possible.
+  
+  For creating a temperature resistant black surface on the battery, we could simply hold a candle under the battery to create a soot layer; however,
+  I do worry that this may interact with the chemistry of the stainless steel and that the coefficients of thermal expansion would vary, so I am very
+  open to alternative solutions. The best heat absorbers tend to be the worst conductors, so we need a material that can be deployed in a thin form
+  factor. The one notable exception to my statement about heat absorbers would be something like carbond fiber, which is both a good conductor and has 
+  a high thermal emissivity (emissivity and absorbtion are correlated).
+  
+  Finally, for monitoring the temperature of the battery we should probably follow a policy of redundancy, with some physical sensor and also an infrared
+  detector, both of which should display the temperature to the operator. Once the melting point of the mixture is exceeded by a few degrees, an warning
+  light should go off and when the temperature is exceeded more significantly, an alarm should go off as the liquid mixture will continue to expand in 
+  volume and could cause a leak.
+  
+  I propose that below the battery and insulation there should be a pit of sand or BB's to give any leaks a place to cool off without reacting vigorously.
+  
+  
   
  ##Research:
     As shown on the two sun altitude path charts, most of the intense sunlight (sufficient UVB for vitamin D production is used as an analog) is
